@@ -57,7 +57,7 @@ class Sms(Api):
     path = 'sms.do'
 
     send = bind_api_endpoint(
-        method='POST',
+        method='GET',
         path=path,
         mapping=(SendResult, ResultCollection),
         accept_parameters=sms_parameters + ['to'],
